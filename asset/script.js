@@ -21,15 +21,16 @@ function setTime() {
     $(`#${i}`).text(setime.format("hh a"));
     setime.add(1, "hours");
 
-    if (currentTime >= setime[i]) {
+    if (currentTime >= setime) {
       form.removeClass("present");
       form.removeClass("future");
       form.addClass("past");
-    } else if (currentTime == setime[i]) {
+    } else if (currentTime == setime) {
       form.removeClass("past");
       form.removeClass("future");
       form.addClass("present");
-    } else if (currentTime < setime[i]) {
+      console.log(i);
+    } else if (currentTime < setime) {
       form.removeClass("past");
       form.removeClass("present");
       form.addClass("future");
