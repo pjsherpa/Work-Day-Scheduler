@@ -6,30 +6,42 @@ console.log(time);
 var msg = $("#msg");
 inIt();
 setTime();
+// Show current day on schedule
+var currentDay = moment().format("dddd MMM Do, YYYY");
+$("#currentDay").text(currentDay);
+//how to setup time(hour) in the time element and compare it with currentTime.
+var currentTime = moment().format("h");
+console.log(currentTime);
 
 function setTime() {
   var setime = moment().set("hour", 9);
 
   for (var i = 9; i <= 17; i++) {
-    console.log(time[i]);
+    console.log(setime);
     $(`#${i}`).text(setime.format("hh a"));
     setime.add(1, "hours");
+
+    if (currentTime >= setime[i]) {
+      form.removeClass("present");
+      form.removeClass("future");
+      form.addClass("past");
+    } else if (currentTime == setime[i]) {
+      form.removeClass("past");
+      form.removeClass("future");
+      form.addClass("present");
+    } else if (currentTime < setime[i]) {
+      form.removeClass("past");
+      form.removeClass("present");
+      form.addClass("future");
+    }
   }
   console.log(setime.format("hh a"));
-  console.log($(`#${i}`));
 }
-
-// Show current day on schedule
-var currentDay = moment().format("dddd MMM Do, YYYY");
-$("#currentDay").text(currentDay);
 
 // used to change colour
 // time interval works with color changing mechanism
-//how to setup time(hour) in the time element and compare it with currentTime.
 
-var currentTime = moment().format("h");
-console.log(currentTime);
-
+/*
 var changecolor = function () {
   for (var i = 0; i > time.length; i++) {
     console.log(time[i]);
@@ -44,6 +56,7 @@ var changecolor = function () {
     }
   }
 };
+*/
 
 // localstorage steps ref 26 stu local storage todos ucb
 
@@ -119,4 +132,3 @@ button.on("click", function (event) {
 });
 
 inIt();
-changecolor();
