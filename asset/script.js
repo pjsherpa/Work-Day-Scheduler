@@ -1,6 +1,7 @@
 var button = $(".saveBtn");
 var time = $("p");
 var msg = $("#msg");
+inIt();
 
 // Show current day on schedule
 var currentDay = moment().format("dddd MMM Do, YYYY");
@@ -39,18 +40,18 @@ function setTime() {
   }
 }
 
-// sessionStorage steps ref 26 stu local storage todos ucb
+// localstorage steps ref 26 stu local storage todos ucb
 function inIt() {
-  // console.log(JSON.parse(sessionStorage.getItem("scheduleList11")));
-  var scheduleList9 = sessionStorage.getItem("scheduleList9");
-  var scheduleList10 = sessionStorage.getItem("scheduleList10");
-  var scheduleList11 = sessionStorage.getItem("scheduleList11");
-  var scheduleList12 = sessionStorage.getItem("scheduleList12");
-  var scheduleList1 = sessionStorage.getItem("scheduleList1");
-  var scheduleList2 = sessionStorage.getItem("scheduleList2");
-  var scheduleList3 = sessionStorage.getItem("scheduleList3");
-  var scheduleList4 = sessionStorage.getItem("scheduleList4");
-  var scheduleList5 = sessionStorage.getItem("scheduleList5");
+  // console.log(JSON.parse(localStorage.getItem("scheduleList11")));
+  var scheduleList9 = localStorage.getItem("scheduleList9");
+  var scheduleList10 = localStorage.getItem("scheduleList10");
+  var scheduleList11 = localStorage.getItem("scheduleList11");
+  var scheduleList12 = localStorage.getItem("scheduleList12");
+  var scheduleList1 = localStorage.getItem("scheduleList1");
+  var scheduleList2 = localStorage.getItem("scheduleList2");
+  var scheduleList3 = localStorage.getItem("scheduleList3");
+  var scheduleList4 = localStorage.getItem("scheduleList4");
+  var scheduleList5 = localStorage.getItem("scheduleList5");
   if (
     !scheduleList9 ||
     !scheduleList10 ||
@@ -93,15 +94,15 @@ button.on("click", function (event) {
   var scheduleList3 = $("#seventh").val();
   var scheduleList4 = $("#eight").val();
   var scheduleList5 = $("#ninth").val();
-  sessionStorage.setItem("scheduleList9", scheduleList9);
-  sessionStorage.setItem("scheduleList10", scheduleList10);
-  sessionStorage.setItem("scheduleList11", scheduleList11);
-  sessionStorage.setItem("scheduleList12", scheduleList12);
-  sessionStorage.setItem("scheduleList1", scheduleList1);
-  sessionStorage.setItem("scheduleList2", scheduleList2);
-  sessionStorage.setItem("scheduleList3", scheduleList3);
-  sessionStorage.setItem("scheduleList4", scheduleList4);
-  sessionStorage.setItem("scheduleList5", scheduleList5);
+  localStorage.setItem("scheduleList9", scheduleList9);
+  localStorage.setItem("scheduleList10", scheduleList10);
+  localStorage.setItem("scheduleList11", scheduleList11);
+  localStorage.setItem("scheduleList12", scheduleList12);
+  localStorage.setItem("scheduleList1", scheduleList1);
+  localStorage.setItem("scheduleList2", scheduleList2);
+  localStorage.setItem("scheduleList3", scheduleList3);
+  localStorage.setItem("scheduleList4", scheduleList4);
+  localStorage.setItem("scheduleList5", scheduleList5);
 
   console.log("button clicked");
   //display msg once save button has been clicked.
