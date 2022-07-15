@@ -1,66 +1,46 @@
-var form = $(".form-control");
 var button = $(".saveBtn");
 var time = $("p");
-console.log(time);
-// console.log(time[0]);
 var msg = $("#msg");
 inIt();
-setTime();
+
 // Show current day on schedule
 var currentDay = moment().format("dddd MMM Do, YYYY");
 $("#currentDay").text(currentDay);
 //how to setup time(hour) in the time element and compare it with currentTime.
-var currentTime = moment().format("h");
-console.log(currentTime);
+var currentTime = moment().format("H");
+// converting this to number for comaprison for the if else statement below
+currentTime = parseInt(currentTime);
 
+setTime();
 function setTime() {
   var setime = moment().set("hour", 9);
-
+  // console.log(setime);
   for (var i = 9; i <= 17; i++) {
-    console.log(setime);
+    var form = $(`.time${i}`)[0];
+    // console.dir(form);
+    //setting up time and displaying it
     $(`#${i}`).text(setime.format("hh a"));
     setime.add(1, "hours");
-
-    if (currentTime >= setime) {
-      form.removeClass("present");
-      form.removeClass("future");
-      form.addClass("past");
-    } else if (currentTime == setime) {
-      form.removeClass("past");
-      form.removeClass("future");
-      form.addClass("present");
+    console.log(i, currentTime);
+    //past = red; present=blue; future=green;
+    if (currentTime > i) {
+      form.classList.remove("present");
+      form.classList.remove("future");
+      form.classList.add("past");
+    } else if (currentTime === i) {
+      form.classList.remove("past");
+      form.classList.remove("future");
+      form.classList.add("present");
       console.log(i);
-    } else if (currentTime < setime) {
-      form.removeClass("past");
-      form.removeClass("present");
-      form.addClass("future");
+    } else if (currentTime < i) {
+      form.classList.remove("past");
+      form.classList.remove("present");
+      form.classList.add("future");
     }
   }
-  console.log(setime.format("hh a"));
 }
 
-// used to change colour
-// time interval works with color changing mechanism
-
-/*
-var changecolor = function () {
-  for (var i = 0; i > time.length; i++) {
-    console.log(time[i]);
-    // console.log(time.attr("id"));
-    //past present future
-    if (currentTime >= time[i].attr("id")) {
-      form.addClass("past");
-    } else if (currentTime == time[i].attr("id")) {
-      form.addClass("present");
-    } else if (currentTime < time[i].attr("id")) {
-      form.addClass("future");
-    }
-  }
-};
-*/
-
 // localstorage steps ref 26 stu local storage todos ucb
-
 function inIt() {
   // console.log(JSON.parse(localStorage.getItem("scheduleList11")));
   var scheduleList9 = localStorage.getItem("scheduleList9");
@@ -102,8 +82,6 @@ function displayMessage(type, message) {
 }
 
 // Updates schedule on screen and sets it up to client storage.
-// why is it not being displayed??
-
 button.on("click", function (event) {
   event.preventDefault();
   // using unique ID's for schedulelist 9am-5pm
@@ -131,5 +109,4 @@ button.on("click", function (event) {
   displayMessage();
   inIt();
 });
-
 inIt();
