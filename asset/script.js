@@ -109,4 +109,3 @@ button.on("click", function (event) {
   displayMessage();
   inIt();
 });
-inIt();
