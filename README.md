@@ -15,7 +15,7 @@ This readme has the following:
 Features:
 
 1. The page displays the current date(ref img:1), schedule time with lines to write and edit and save(for which a save button(💾)(ref img:3) is provided.)
-2. Click on line to edit, once done click the save button(💾)Displaays message(ref img:2) saves on local storage. Displays saved schedule list after page has been refreshed.
+2. Click on line to edit, once done click the save button(💾)Displays message(ref img:2) saves on local storage. Displays saved schedule list after page has been refreshed.
 3. Line colour changes individually according to time(ref img2-4). Which is scheduled from 9am to 5pm. (past = red; present=blue; future=green;)
 
 HTML:
