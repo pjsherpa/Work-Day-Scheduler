@@ -16,7 +16,7 @@ Features:
 
 1. The page displays the current date(ref img:1), schedule time with lines to write and edit and save(for which a save button(💾)(ref img:3) is provided.)
 2. Click on line to edit, once done click the save button(💾)Displays message(ref img:2) saves on local storage. Displays saved schedule list after page has been refreshed.
-3. Line colour changes individually according to time(ref img2-4). Which is scheduled from 9am to 5pm. (past = red; present=blue; future=green;)
+3. Line colour changes individually according to time(ref img3-6). Which is scheduled from 9am to 5pm. (past = red; present=blue; future=green;)
 
 HTML:
 
@@ -70,4 +70,8 @@ img4:
 img5:
 
 <img width="1396" alt="Screen Shot 2022-07-15 at 6 05 45 PM" src="https://user-images.githubusercontent.com/105903416/179328463-a13b7276-05c1-4747-8d2c-52c23332fea1.png">
+
+img6: How it looks like at 3.35PM:
+
+<img width="1432" alt="Screen Shot 2022-07-16 at 3 35 58 PM" src="https://user-images.githubusercontent.com/105903416/179373856-a9ac6705-fbd2-418e-b1e9-025a2a8f5f32.png">
 
