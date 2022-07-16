@@ -52,19 +52,7 @@ function inIt() {
   var scheduleList3 = localStorage.getItem("scheduleList3");
   var scheduleList4 = localStorage.getItem("scheduleList4");
   var scheduleList5 = localStorage.getItem("scheduleList5");
-  if (
-    !scheduleList9 ||
-    !scheduleList10 ||
-    !scheduleList11 ||
-    !scheduleList12 ||
-    !scheduleList1 ||
-    !scheduleList2 ||
-    !scheduleList3 ||
-    !scheduleList4 ||
-    !scheduleList5
-  ) {
-    return;
-  }
+
   // using unique ID's for schedulelist 9am-5pm
   $("#first").val(scheduleList9);
   $("#second").val(scheduleList10);
