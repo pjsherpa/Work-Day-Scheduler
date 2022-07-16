@@ -46,6 +46,7 @@ live URL:https://pjsherpa.github.io/Work-Day-Scheduler/
 GitHub URL:https://github.com/pjsherpa/Work-Day-Scheduler
 
 Screenshot:
+
 img1:
 <img width="750" alt="Screen Shot 2022-07-15 at 5 57 37 PM" src="https://user-images.githubusercontent.com/105903416/179328075-691fb4a5-0a59-4f95-b3ac-d73dbf24b574.png">
 
@@ -53,7 +54,7 @@ img2:
 <img width="1422" alt="Screen Shot 2022-07-15 at 5 58 41 PM" src="https://user-images.githubusercontent.com/105903416/179328172-665474ab-708f-4767-84e9-e806c251d045.png">
 
 img3:
-<img width="1426" alt="Screen Shot 2022-07-15 at 5 58 48 PM" src="https://user-images.githubusercontent.com/105903416/179328195-6f44b794-e650-44ce-a329-51ed180cbe38.png">
+<img width="1375" alt="Screen Shot 2022-07-15 at 6 04 06 PM" src="https://user-images.githubusercontent.com/105903416/179328412-894ed604-a735-43d1-8444-acbdafd54f1f.png">
 
 img4:
 <img width="1422" alt="Screen Shot 2022-07-15 at 6 00 01 PM" src="https://user-images.githubusercontent.com/105903416/179328213-cfeb43dc-aa08-40af-97bc-0a54ad5dc431.png">
