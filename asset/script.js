@@ -3,7 +3,6 @@ var button = $(".saveBtn");
 var time = $("p");
 var msg = $("#msg");
 inIt();
-saved();
 // Show current day on schedule
 var currentDay = moment().format("dddd MMM Do, YYYY");
 $("#currentDay").text(currentDay);
@@ -70,32 +69,31 @@ function displayMessage(type, message) {
 }
 
 // Updates schedule on screen and sets it up to client storage.
-function saved() {
-  button.on("click", function (event) {
-    event.preventDefault();
-    // using unique ID's for schedulelist 9am-5pm
-    var scheduleList9 = $("#first").val();
-    var scheduleList10 = $("#second").val();
-    var scheduleList11 = $("#third").val();
-    var scheduleList12 = $("#fourth").val();
-    var scheduleList1 = $("#fifth").val();
-    var scheduleList2 = $("#sixth").val();
-    var scheduleList3 = $("#seventh").val();
-    var scheduleList4 = $("#eight").val();
-    var scheduleList5 = $("#ninth").val();
-    localStorage.setItem("scheduleList9", scheduleList9);
-    localStorage.setItem("scheduleList10", scheduleList10);
-    localStorage.setItem("scheduleList11", scheduleList11);
-    localStorage.setItem("scheduleList12", scheduleList12);
-    localStorage.setItem("scheduleList1", scheduleList1);
-    localStorage.setItem("scheduleList2", scheduleList2);
-    localStorage.setItem("scheduleList3", scheduleList3);
-    localStorage.setItem("scheduleList4", scheduleList4);
-    localStorage.setItem("scheduleList5", scheduleList5);
 
-    console.log("button clicked");
-    //display msg once save button has been clicked.
-    inIt();
-    displayMessage();
-  });
-}
+button.on("click", function (event) {
+  event.preventDefault();
+  // using unique ID's for schedulelist 9am-5pm
+  var scheduleList9 = $("#first").val();
+  var scheduleList10 = $("#second").val();
+  var scheduleList11 = $("#third").val();
+  var scheduleList12 = $("#fourth").val();
+  var scheduleList1 = $("#fifth").val();
+  var scheduleList2 = $("#sixth").val();
+  var scheduleList3 = $("#seventh").val();
+  var scheduleList4 = $("#eight").val();
+  var scheduleList5 = $("#ninth").val();
+  localStorage.setItem("scheduleList9", scheduleList9);
+  localStorage.setItem("scheduleList10", scheduleList10);
+  localStorage.setItem("scheduleList11", scheduleList11);
+  localStorage.setItem("scheduleList12", scheduleList12);
+  localStorage.setItem("scheduleList1", scheduleList1);
+  localStorage.setItem("scheduleList2", scheduleList2);
+  localStorage.setItem("scheduleList3", scheduleList3);
+  localStorage.setItem("scheduleList4", scheduleList4);
+  localStorage.setItem("scheduleList5", scheduleList5);
+
+  console.log("button clicked");
+  //display msg once save button has been clicked.
+  inIt();
+  displayMessage();
+});
