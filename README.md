@@ -14,8 +14,8 @@ This readme has the following:
 
 Features:
 
-1. The page displays the current date(ref img:1), schedule time with lines to write and edit and save(for which a save button(💾)(ref img:2) is provided.)
-2. Click on line to edit, once done click the save button(💾) saves on local storage. Displays saved schedule list after page has been refreshed.
+1. The page displays the current date(ref img:1), schedule time with lines to write and edit and save(for which a save button(💾)(ref img:3) is provided.)
+2. Click on line to edit, once done click the save button(💾)Displaays message(ref img:2) saves on local storage. Displays saved schedule list after page has been refreshed.
 3. Line colour changes individually according to time(ref img2-4). Which is scheduled from 9am to 5pm. (past = red; present=blue; future=green;)
 
 HTML:
@@ -48,14 +48,24 @@ GitHub URL:https://github.com/pjsherpa/Work-Day-Scheduler
 Screenshot:
 
 img1:
-<img width="750" alt="Screen Shot 2022-07-15 at 5 57 37 PM" src="https://user-images.githubusercontent.com/105903416/179328075-691fb4a5-0a59-4f95-b3ac-d73dbf24b574.png">
+
+<img width="825" alt="Screen Shot 2022-07-15 at 6 07 45 PM" src="https://user-images.githubusercontent.com/105903416/179328527-8182f0cb-07dd-4348-9e82-b9471f02592c.png">
 
 img2:
-<img width="1422" alt="Screen Shot 2022-07-15 at 5 58 41 PM" src="https://user-images.githubusercontent.com/105903416/179328172-665474ab-708f-4767-84e9-e806c251d045.png">
+
+<img width="580" alt="Screen Shot 2022-07-15 at 6 07 57 PM" src="https://user-images.githubusercontent.com/105903416/179328560-b796af65-5750-4215-91eb-e9b426b556e1.png">
+
+
 
 img3:
-<img width="1375" alt="Screen Shot 2022-07-15 at 6 04 06 PM" src="https://user-images.githubusercontent.com/105903416/179328412-894ed604-a735-43d1-8444-acbdafd54f1f.png">
+
+<img width="1422" alt="Screen Shot 2022-07-15 at 5 58 41 PM" src="https://user-images.githubusercontent.com/105903416/179328172-665474ab-708f-4767-84e9-e806c251d045.png">
 
 img4:
+
+<img width="1375" alt="Screen Shot 2022-07-15 at 6 04 06 PM" src="https://user-images.githubusercontent.com/105903416/179328412-894ed604-a735-43d1-8444-acbdafd54f1f.png">
+
+img5:
+
 <img width="1396" alt="Screen Shot 2022-07-15 at 6 05 45 PM" src="https://user-images.githubusercontent.com/105903416/179328463-a13b7276-05c1-4747-8d2c-52c23332fea1.png">
 
