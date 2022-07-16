@@ -10,7 +10,7 @@ This readme has the following:
 3. CSS 
 4. Javascript 
 5. Deployment 
-6. Screenshot of Work-Day-Scheduler(img1-img)
+6. Screenshot of Work-Day-Scheduler(img1-img5)
 
 Features:
 
@@ -40,6 +40,8 @@ Javascript:
 5. displayMessage function created.
 6. AddEvent listener created Local storage setup for all lines individually using unique ID for scheduledlist 9am-5pm. Once clicked also invokes displayMessage function.
 7.Comments are present in script.js.
+
+Deployment:
 
 live URL:https://pjsherpa.github.io/Work-Day-Scheduler/
 
