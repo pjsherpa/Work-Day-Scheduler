@@ -73,8 +73,7 @@ textarea{
 /* touching up on -input-group-text for consistency in display */
 .input-group-text{
   min-width: 100px;
-}
-
+   }
 /* google font */
 #msg{
   font-family: 'Press Start 2P', cursive;

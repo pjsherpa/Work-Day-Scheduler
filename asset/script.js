@@ -41,7 +41,7 @@ function setTime() {
   }
 }
 
-// localstorage steps ref 26 stu local storage todos ucb
+// localstorage steps ref: 26 stu local storage todos ucb-WebAPI
 function inIt() {
   var scheduleList9 = localStorage.getItem("scheduleList9");
   var scheduleList10 = localStorage.getItem("scheduleList10");
