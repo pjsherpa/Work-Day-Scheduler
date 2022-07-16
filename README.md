@@ -39,7 +39,7 @@ Javascript:
 4. Function created for the comparison, which displays different colors focusing on different lines accordingly depending if its past||present||future.
 5. displayMessage function created.
 6. AddEvent listener created Local storage setup for all lines individually using unique ID for scheduledlist 9am-5pm. Once clicked also invokes displayMessage function.
-7.Comments are present in script.js.
+7. Comments are present in script.js.
 
 Deployment:
 
