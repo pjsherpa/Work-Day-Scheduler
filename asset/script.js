@@ -1,6 +1,7 @@
 var button = $(".saveBtn");
 var time = $("p");
 var msg = $("#msg");
+inIt();
 saved();
 // Show current day on schedule
 var currentDay = moment().format("dddd MMM Do, YYYY");
@@ -106,8 +107,7 @@ function saved() {
 
     console.log("button clicked");
     //display msg once save button has been clicked.
-    displayMessage();
     inIt();
+    displayMessage();
   });
 }
-inIt();
