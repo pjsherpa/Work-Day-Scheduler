@@ -1,3 +1,4 @@
+// variables created to link between html and js
 var button = $(".saveBtn");
 var time = $("p");
 var msg = $("#msg");
@@ -6,7 +7,7 @@ saved();
 // Show current day on schedule
 var currentDay = moment().format("dddd MMM Do, YYYY");
 $("#currentDay").text(currentDay);
-//how to setup time(hour) in the time element and compare it with currentTime.
+//setup time(hour) in the time element and compare it with currentTime.
 var currentTime = moment().format("H");
 // converting this to number for comaprison for the if else statement below
 currentTime = parseInt(currentTime);
@@ -27,7 +28,7 @@ function setTime() {
       form.classList.remove("present");
       form.classList.remove("future");
       form.classList.add("past");
-    } else if (currentTime === i) {
+    } else if (currentTime == i) {
       form.classList.remove("past");
       form.classList.remove("future");
       form.classList.add("present");
@@ -42,7 +43,6 @@ function setTime() {
 
 // localstorage steps ref 26 stu local storage todos ucb
 function inIt() {
-  // console.log(JSON.parse(localStorage.getItem("scheduleList11")));
   var scheduleList9 = localStorage.getItem("scheduleList9");
   var scheduleList10 = localStorage.getItem("scheduleList10");
   var scheduleList11 = localStorage.getItem("scheduleList11");

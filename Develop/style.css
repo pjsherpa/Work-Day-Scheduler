@@ -70,14 +70,12 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+/* touching up on -input-group-text for consistency in display */
 .input-group-text{
   min-width: 100px;
 }
 
-.show{
-  display: block;
-}
-
+/* google font */
 #msg{
   font-family: 'Press Start 2P', cursive;
 }
