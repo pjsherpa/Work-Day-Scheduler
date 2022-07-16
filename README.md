@@ -55,6 +55,5 @@ img1: This screenshot is based at 3:35PM
 
 
 img2:
-
-<img width="580" alt="Screen Shot 2022-07-15 at 6 07 57 PM" src="https://user-images.githubusercontent.com/105903416/179328560-b796af65-5750-4215-91eb-e9b426b556e1.png">
+![Screen Shot 2022-07-16 at 3 41 58 PM](https://user-images.githubusercontent.com/105903416/179374042-67b7a666-eb4f-4849-9aa8-53f6bd9d2abe.png)
 
